@@ -9,10 +9,16 @@ function App() {
 
     return <div>
         <div>
-            <Button secondary outline rounded onClick={handleClick}>
-                <GoBell />
+            <Button 
+            secondary
+            outline
+            rounded
+            className="mb-5"
+            onClick={handleClick}
+            >
+            <GoBell />
                 Click me!!
-                </Button>
+            </Button>
         </div>
         <div>
             <Button danger outline>
