@@ -1,48 +1,41 @@
-import Button from "../components/Button";
+import Button, {DeleteButton} from '../components/ButtonSC';
 import { GoBell, GoCloudDownload } from 'react-icons/go';
 
 function ButtonPage() {
-
-    const handleClick = () => {};
-
-    return <div>
+    const handleClick = () => {
+        console.log('Clicked!');
+      };
+    
+      return (
         <div>
+          <div>
             <Button 
-            secondary
-            outline
-            rounded
-            className="mb-5"
+            $primary
             onClick={handleClick}
             >
-            <GoBell />
-                Click me!!
+              <GoCloudDownload />
+              Buy Now!
             </Button>
-        </div>
-        <div>
-            <Button danger outline>
-            <GoCloudDownload />
-                Buy Now!
+          </div>
+          <div>
+            <Button 
+            $secondary
+            $rounded
+            onMouseEnter={handleClick}
+            >
+              <GoBell />
+              Add to Cart!
             </Button>
+          </div>
+          <div>
+            <DeleteButton
+            onMouseLeave={handleClick}
+            >
+              Delete
+            </DeleteButton>
+          </div>
         </div>
-        <div>
-            <Button warning>
-            <GoCloudDownload />
-                See Deal!
-            </Button>
-        </div>
-        <div>
-            <Button secondary>    
-            <GoCloudDownload />
-            Hide Ads!
-            </Button>
-        </div>
-        <div>
-            <Button primary rounded>
-            <GoCloudDownload />
-                Something!
-            </Button>
-        </div>
-    </div>;
+      );
 }
 
 export default ButtonPage;
