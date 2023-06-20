@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Modal from "../components/Modal";
-import Button from "../components/Button";
+import Button from "../components/ButtonSC";
 
 function ModalPage() {
     const [showModal, setShowModal] = useState(false);
@@ -20,7 +20,7 @@ function ModalPage() {
 
     return (
             <div className="relative">
-                <Button onClick={handleClick} primary>
+                <Button onClick={handleClick} $primary>
                     Open Modal
                 </Button>
                 {showModal && modal}
