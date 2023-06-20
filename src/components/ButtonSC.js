@@ -7,7 +7,11 @@ export const Button = styled.button`
   color: #3B82F6;
   margin: 0 1em;
   padding: 0.25em 1em;
-
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 ${props =>
     props.$primary &&
     css`
