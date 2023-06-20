@@ -13,7 +13,7 @@ function ModalPage() {
         setShowModal(false);
     };
 
-    const actionBar = <div><Button primary onClick={handleClose}>I Accept</Button></div>;
+    const actionBar = <div><Button $primary onClick={handleClose}>I Accept</Button></div>;
     const modal = <Modal onClose={handleClose} actionBar={actionBar}>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fringilla leo sed commodo condimentum. Suspendisse nisi orci, imperdiet laoreet consequat mollis, scelerisque et tellus. Praesent condimentum euismod magna ac euismod. Morbi porta, orci at congue lacinia, arcu metus iaculis eros, ut venenatis mi magna sed lacus. Nulla mollis gravida pharetra. Nulla et magna sed erat pellentesque auctor. Donec ac elit ex. Nam fringilla quam sit amet nibh mollis, quis vestibulum ipsum facilisis. Vivamus nisl purus, sagittis nec turpis id, convallis aliquet mi. Donec malesuada lacinia erat, faucibus scelerisque lorem. Nam sit amet ante et odio volutpat efficitur. Praesent et rhoncus ipsum. Suspendisse cursus risus in metus tincidunt, ut faucibus orci aliquam. Sed varius facilisis ex sed pharetra. Vivamus malesuada sem volutpat lectus tempus iaculis. Fusce dignissim a mauris eu dictum.</p>
     </Modal>

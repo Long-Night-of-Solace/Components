@@ -3,15 +3,15 @@ import styled, { css } from 'styled-components';
 export const Button = styled.button`
   background: transparent;
   border-radius: 3px;
-  border: 2px solid #BF4F74;
-  color: #BF4F74;
+  border: 2px solid #3B82F6;
+  color: #3B82F6;
   margin: 0 1em;
   padding: 0.25em 1em;
 
 ${props =>
     props.$primary &&
     css`
-      background: #BF4F74;
+      background: #3B82F6;
       color: white;
        `}
 
@@ -19,7 +19,7 @@ ${props =>
     props.$secondary &&
     css`
       background: white;
-      color: #BF4F74;
+      color: #3B82F6;
        `}
 
 ${props =>
@@ -43,7 +43,7 @@ const getBackgroundColor = ($color) => {
     case 'yellow':
         return '#FFFF00';
     default:
-        return '#BF4F74';
+        return '#3B82F6';
     }
 };
 export const CustomColoredButton = styled(Button) `
