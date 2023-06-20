@@ -30,6 +30,6 @@ ${props =>
 `
 
 export const DeleteButton = styled(Button) `
-    background: red;
+    background: #cc0000;
     color: white;
 `;

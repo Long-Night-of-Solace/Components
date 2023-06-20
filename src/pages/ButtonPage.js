@@ -1,4 +1,4 @@
-import Button, {DeleteButton} from '../components/ButtonSC';
+import { Button, DeleteButton } from '../components/ButtonSC';
 import { GoBell, GoCloudDownload } from 'react-icons/go';
 
 function ButtonPage() {
