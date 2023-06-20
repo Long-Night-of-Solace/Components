@@ -1,4 +1,4 @@
-import { Button, DeleteButton } from '../components/ButtonSC';
+import { Button, CustomColoredButton, DeleteButton } from '../components/ButtonSC';
 import { GoBell, GoCloudDownload } from 'react-icons/go';
 
 function ButtonPage() {
@@ -33,6 +33,16 @@ function ButtonPage() {
             >
               Delete
             </DeleteButton>
+          </div>
+          <div>
+            <CustomColoredButton 
+            $primary
+            onClick={handleClick}
+            $color={'cyan'}
+            >
+              <GoCloudDownload />
+              Buy Now!
+            </CustomColoredButton>
           </div>
         </div>
       );
