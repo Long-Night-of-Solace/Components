@@ -38,7 +38,11 @@ export const DeleteButton = styled(Button) `
     border: 2px solid #cc0000;
     color: white;
 `;
-
+/**
+ * 
+ * @param {string} $color Color provided by the user of the component
+ * @returns hash code of the color provided
+ */
 const getBackgroundColor = ($color) => {
 
     switch ($color){
